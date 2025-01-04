@@ -156,9 +156,9 @@ The class satisfies the following concept requirements:
 - [(constructor)](basic_json.md)
 - [(destructor)](~basic_json.md)
 - [**operator=**](operator=.md) - copy assignment
-- [**array**](array_t.md) (_static_) - explicitly create an array
+- [**array**](array.md) (_static_) - explicitly create an array
 - [**binary**](binary.md) (_static_) - explicitly create a binary array
-- [**object**](object_t.md) (_static_) - explicitly create an object
+- [**object**](object.md) (_static_) - explicitly create an object
 
 ### Object inspection
 

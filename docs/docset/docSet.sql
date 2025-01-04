@@ -72,6 +72,7 @@ INSERT INTO searchIndex(name, type, path) VALUES ('basic_json::is_primitive', 'M
 INSERT INTO searchIndex(name, type, path) VALUES ('basic_json::is_string', 'Method', 'api/basic_json/is_string/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('basic_json::is_structured', 'Method', 'api/basic_json/is_structured/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('basic_json::items', 'Method', 'api/basic_json/items/index.html');
+INSERT INTO searchIndex(name, type, path) VALUES ('basic_json::json_base_class_t', 'Type', 'api/basic_json/json_base_class_t/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('basic_json::json_serializer', 'Class', 'api/basic_json/json_serializer/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('basic_json::max_size', 'Method', 'api/basic_json/max_size/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('basic_json::merge_patch', 'Method', 'api/basic_json/merge_patch/index.html');
@@ -175,6 +176,7 @@ INSERT INTO searchIndex(name, type, path) VALUES ('Element Access', 'Guide', 'fe
 INSERT INTO searchIndex(name, type, path) VALUES ('Element Access: Access with default value: value', 'Guide', 'features/element_access/default_value/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('Element Access: Checked access: at', 'Guide', 'features/element_access/checked_access/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('Element Access: Unchecked access: operator[]', 'Guide', 'features/element_access/unchecked_access/index.html');
+INSERT INTO searchIndex(name, type, path) VALUES ('Exceptions', 'Guide', 'home/exceptions/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('Integration: Migration Guide', 'Guide', 'integration/migration_guide/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('Integration: CMake', 'Guide', 'integration/cmake/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('Integration: Header only', 'Guide', 'integration/index.html');
@@ -201,6 +203,7 @@ INSERT INTO searchIndex(name, type, path) VALUES ('Supported Macros', 'Guide', '
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_ASSERT', 'Macro', 'api/macros/json_assert/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_CATCH_USER', 'Macro', 'api/macros/json_throw_user/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_DIAGNOSTICS', 'Macro', 'api/macros/json_diagnostics/index.html');
+INSERT INTO searchIndex(name, type, path) VALUES ('JSON_DIAGNOSTIC_POSITIONS', 'Macro', 'api/macros/json_diagnostic_positions/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_DISABLE_ENUM_SERIALIZATION', 'Macro', 'api/macros/json_disable_enum_serialization/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_HAS_CPP_11', 'Macro', 'api/macros/json_has_cpp_11/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_HAS_CPP_14', 'Macro', 'api/macros/json_has_cpp_11/index.html');
@@ -209,6 +212,7 @@ INSERT INTO searchIndex(name, type, path) VALUES ('JSON_HAS_CPP_20', 'Macro', 'a
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_HAS_EXPERIMENTAL_FILESYSTEM', 'Macro', 'api/macros/json_has_filesystem/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_HAS_FILESYSTEM', 'Macro', 'api/macros/json_has_filesystem/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_HAS_RANGES', 'Macro', 'api/macros/json_has_ranges/index.html');
+INSERT INTO searchIndex(name, type, path) VALUES ('JSON_HAS_STATIC_RTTI', 'Macro', 'api/macros/json_has_static_rtti/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_HAS_THREE_WAY_COMPARISON', 'Macro', 'api/macros/json_has_three_way_comparison/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_NOEXCEPTION', 'Macro', 'api/macros/json_noexception/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_NO_IO', 'Macro', 'api/macros/json_no_io/index.html');
@@ -220,6 +224,10 @@ INSERT INTO searchIndex(name, type, path) VALUES ('JSON_USE_GLOBAL_UDLS', 'Macro
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_USE_IMPLICIT_CONVERSIONS', 'Macro', 'api/macros/json_use_implicit_conversions/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('JSON_USE_LEGACY_DISCARDED_VALUE_COMPARISON', 'Macro', 'api/macros/json_use_legacy_discarded_value_comparison/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('Macros', 'Macro', 'api/macros/index.html');
+INSERT INTO searchIndex(name, type, path) VALUES ('NLOHMANN_DEFINE_DERIVED_TYPE_INTRUSIVE', 'Macro', 'api/macros/nlohmann_define_derived_type/index.html');
+INSERT INTO searchIndex(name, type, path) VALUES ('NLOHMANN_DEFINE_DERIVED_TYPE_INTRUSIVE_WITH_DEFAULT', 'Macro', 'api/macros/nlohmann_define_derived_type/index.html');
+INSERT INTO searchIndex(name, type, path) VALUES ('NLOHMANN_DEFINE_DERIVED_TYPE_NON_INTRUSIVE', 'Macro', 'api/macros/nlohmann_define_derived_type/index.html');
+INSERT INTO searchIndex(name, type, path) VALUES ('NLOHMANN_DEFINE_DERIVED_TYPE_NON_INTRUSIVE_WITH_DEFAULT', 'Macro', 'api/macros/nlohmann_define_derived_type/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('NLOHMANN_DEFINE_TYPE_INTRUSIVE', 'Macro', 'api/macros/nlohmann_define_type_intrusive/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('NLOHMANN_DEFINE_TYPE_INTRUSIVE_WITH_DEFAULT', 'Macro', 'api/macros/nlohmann_define_type_intrusive/index.html');
 INSERT INTO searchIndex(name, type, path) VALUES ('NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE', 'Macro', 'api/macros/nlohmann_define_type_non_intrusive/index.html');

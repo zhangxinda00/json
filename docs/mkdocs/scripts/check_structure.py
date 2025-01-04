@@ -4,6 +4,7 @@ import glob
 import os.path
 import re
 import sys
+import yaml
 
 warnings = 0
 
@@ -169,10 +170,51 @@ def check_examples():
             report('examples/missing', f'{example_file}', 'example file is not used in any documentation file')
 
 
+def check_links():
+    """
+    Check that every entry in the navigation (nav in mkdocs.yml) links to at most one file. If a file is linked more
+    than once, then the first entry is repeated. See https://github.com/nlohmann/json/issues/4564 for the issue in
+    this project and https://github.com/mkdocs/mkdocs/issues/3428 for the root cause.
+
+    The issue can be fixed by merging the keys, so
+
+    - 'NLOHMANN_JSON_VERSION_MAJOR': api/macros/nlohmann_json_version_major.md
+    - 'NLOHMANN_JSON_VERSION_MINOR': api/macros/nlohmann_json_version_major.md
+
+    would be replaced with
+
+    - 'NLOHMANN_JSON_VERSION_MAJOR, NLOHMANN_JSON_VERSION_MINOR': api/macros/nlohmann_json_version_major.md
+    """
+
+    file_with_path = {}
+
+    def collect_links(node, path=""):
+        if type(node) is list:
+            for x in node:
+                collect_links(x, path)
+        elif type(node) is dict:
+            for p, x in node.items():
+                collect_links(x, path + '/' + p)
+        else:
+            if node not in file_with_path:
+                file_with_path[node] = []
+            file_with_path[node].append(path)
+
+    with open('../mkdocs.yml') as mkdocs_file:
+        # see https://github.com/yaml/pyyaml/issues/86#issuecomment-1042485535
+        yaml.add_multi_constructor('tag:yaml.org,2002:python/name', lambda loader, suffix, node: None, Loader=yaml.SafeLoader)
+        y = yaml.safe_load(mkdocs_file)
+
+        collect_links(y["nav"])
+        for duplicate_file in [x for x in file_with_path if len(file_with_path[x]) > 1]:
+            report('nav/duplicate_files', 'mkdocs.yml', f'file "{duplicate_file}" is linked with multiple keys in "nav": {", ".join([f'"{x}"' for x in file_with_path[duplicate_file]])}; only one is rendered properly, see #4564')
+
+
 if __name__ == '__main__':
     print(120 * '-')
     check_structure()
     check_examples()
+    check_links()
     print(120 * '-')
 
     if warnings > 0:
