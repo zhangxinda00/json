@@ -187,10 +187,10 @@ def check_links() -> None:
     file_with_path = {}
 
     def collect_links(node, path="") -> None:
-        if type(node) is list:
+        if isinstance(node, list):
             for x in node:
                 collect_links(x, path)
-        elif type(node) is dict:
+        elif isinstance(node, dict):
             for p, x in node.items():
                 collect_links(x, path + "/" + p)
         else:
