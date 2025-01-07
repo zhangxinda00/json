@@ -3,7 +3,7 @@
 <center>
 ![Homebrew](../images/package_managers/homebrew.svg){: style="height:1em"}&nbsp;[**Homebrew**](#homebrew) `nlohmann-json` &emsp;
 ![Meson](../images/package_managers/meson.svg){: style="height:1em"}&nbsp;[**Meson**](#meson) `nlohmann_json` &emsp;
-![Bazel](../images/package_managers/bazel.svg){: style="height:1em"}&nbsp;[**Bazel**](#bazel)<br>
+![Bazel](../images/package_managers/bazel.svg){: style="height:1em"}&nbsp;[**Bazel**](#bazel) `nlohmann_json`<br>
 ![Conan](../images/package_managers/conan.svg){: style="height:1em"}&nbsp;[**Conan**](#conan) `nlohmann_json` &emsp;
 ![Spack](../images/package_managers/spack.svg){: style="height:1em"}&nbsp;[**Spack**](#spack) `nlohmann-json` &emsp;
 [**Hunter**](#hunter) `nlohmann_json`<br>

@@ -1285,7 +1285,7 @@ Use your favorite [**package manager**](https://json.nlohmann.me/integration/pac
 
 - <img src="https://raw.githubusercontent.com/nlohmann/json/refs/heads/cleanup/docs/mkdocs/docs/images/package_managers/homebrew.svg" height="20">&nbsp;[**Homebrew**](https://json.nlohmann.me/integration/package_managers/#homebrew) `nlohmann-json`
 - <img src="https://raw.githubusercontent.com/nlohmann/json/refs/heads/cleanup/docs/mkdocs/docs/images/package_managers/meson.svg" height="20">&nbsp;[**Meson**](https://json.nlohmann.me/integration/package_managers/#meson) `nlohmann_json`
-- <img src="https://raw.githubusercontent.com/nlohmann/json/refs/heads/cleanup/docs/mkdocs/docs/images/package_managers/bazel.svg" height="20">&nbsp;[**Bazel**](https://json.nlohmann.me/integration/package_managers/#bazel) (use `http_archive`, `git_repository`, or `local_repository`)
+- <img src="https://raw.githubusercontent.com/nlohmann/json/refs/heads/cleanup/docs/mkdocs/docs/images/package_managers/bazel.svg" height="20">&nbsp;[**Bazel**](https://json.nlohmann.me/integration/package_managers/#bazel) `nlohmann_json`
 - <img src="https://raw.githubusercontent.com/nlohmann/json/refs/heads/cleanup/docs/mkdocs/docs/images/package_managers/conan.svg" height="20">&nbsp;[**Conan**](https://json.nlohmann.me/integration/package_managers/#conan) `nlohmann_json`
 - <img src="https://raw.githubusercontent.com/nlohmann/json/refs/heads/cleanup/docs/mkdocs/docs/images/package_managers/spack.svg" height="20">&nbsp;[**Spack**](https://json.nlohmann.me/integration/package_managers/#spack) `nlohmann-json`
 - [**Hunter**](https://json.nlohmann.me/integration/package_managers/#hunter) `nlohmann_json`
