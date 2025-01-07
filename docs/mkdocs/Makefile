@@ -13,6 +13,10 @@ build: style_check
 style_check:
 	@cd docs ; ../venv/bin/python3 ../scripts/check_structure.py
 
+# check the links in the documentation
+link_check:
+	ENABLED_HTMLPROOFER=true venv/bin/mkdocs build
+
 # publish site to GitHub pages (not working in GitHub Actions; need special action)
 publish:
 	venv/bin/mkdocs gh-deploy --clean --force

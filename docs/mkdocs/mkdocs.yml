@@ -361,6 +361,12 @@ plugins:
         'api/basic_json/operator_literal_json_pointer.md': api/operator_literal_json_pointer.md
         'api/json_pointer/operator_string.md': api/json_pointer/operator_string_t.md
         'home/code_of_conduct.md': community/code_of_conduct.md
+  - htmlproofer: # see https://github.com/manuzhang/mkdocs-htmlproofer-plugin
+      enabled: !ENV [ENABLED_HTMLPROOFER, False]
+      ignore_urls:
+        - http://nlohmann.github.io/json/*
+        - https://nlohmann.github.io/json/*
+        - mailto:*
 
 extra_css:
   - css/custom.css

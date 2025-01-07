@@ -201,6 +201,7 @@ def check_links() -> None:
     with open("../mkdocs.yml") as mkdocs_file:
         # see https://github.com/yaml/pyyaml/issues/86#issuecomment-1042485535
         yaml.add_multi_constructor("tag:yaml.org,2002:python/name", lambda loader, suffix, node: None, Loader=yaml.SafeLoader)
+        yaml.add_multi_constructor("!ENV", lambda loader, suffix, node: None, Loader=yaml.SafeLoader)
         y = yaml.safe_load(mkdocs_file)
 
         collect_links(y["nav"])
